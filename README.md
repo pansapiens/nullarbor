@@ -68,8 +68,13 @@ distributing the work across a high performance cluster.
 
 ### Software
 
+#### Conda
+Install [Conda](https://conda.io/docs/) or [Miniconda](https://conda.io/miniconda.html):
+
+    conda install -c bioconda -c conda-forge nullarbor
+
 #### Github
-This is the hardest way to instal Nullarbor, but is currently the only way for version 2:
+This is the hardest way to install Nullarbor, but as a reward you get the latest version:
 
     cd $HOME
     git clone https://github.com/tseemann/nullarbor.git
@@ -89,14 +94,10 @@ Install [Homebrew](http://brew.sh/) (macOS) or [LinuxBrew](http://linuxbrew.sh/)
     brew untap homebrew/science
     brew untap tseemann/bioinformatics-linux
     brew install brewsci/bio/nullarbor # COMING SOON!
-
-#### Conda
-Install [Conda](https://conda.io/docs/) or [Miniconda](https://conda.io/miniconda.html):
-
-    conda install -c bioconda -c conda-forge nullarbor  # COMING SOON!
-
-#### Containers
-Once the `bioconda` package is working, Docker and Singularity containers will follow.
+    
+#### Containers (Docker, Singularity)
+A Docker container is available via [biocontainers](https://quay.io/repository/biocontainers/nullarbor?tab=tags).
+The Kraken and Centrifuge databases are not embedded in the container image.
 
 ### Databases
 
